@@ -331,7 +331,7 @@ li span a:hover {
 .menu-wrap .hamburger {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -15;
     z-index: 1;
     width: 60px;
     height: 60px;
@@ -740,13 +740,14 @@ li span:hover:after {
 @media only screen and (max-width: 768px) {
 
     .header {
-        background-size: 80%;
+        background-size: 75%;
     }
 
     /* For mobile phones: */
     .nav-items {
         width: 0;
         height: 0;
+        float:right;
         display: none;
     }
     .work-double-row{
@@ -844,6 +845,10 @@ li span:hover:after {
         text-align: center;
         padding-top: 10px;
         float: none;
+    }
+
+    .legal {
+        display: none;
     }
 
     #legal-hero {
