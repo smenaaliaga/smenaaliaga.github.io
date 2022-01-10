@@ -7,11 +7,31 @@
 }
 
 .header {
-    background: url('assets/img/header.png');
+    background: url('../assets/img/header.png');
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: relative;
     font-size: var(--font-size-normal);
+}
+
+.section {
+    padding: 5px 0;
+  }
+  
+  .section:nth-of-type(1),
+  .section:nth-of-type(3) {
+    background: var(--beige);
+  }
+
+a {
+    text-decoration: none; 
+    color: white; 
+}
+
+a:hover {
+    color: white; 
+    text-decoration:none; 
+    cursor:pointer;  
 }
 
 :root {
@@ -536,6 +556,11 @@ label {
     border: 2px solid var(--light-text-color);
     letter-spacing: 0.1;
     transition: all 1s;
+}
+
+.material-icons {
+    float: right;
+    padding-left: 10px;
 }
 
 .contact-des a {
