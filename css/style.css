@@ -550,12 +550,36 @@ label {
     outline: none;
 } */
 .learn-btn {
-    padding: 5px 10px;
+    padding: 5px 20px;
     background: var(--light-text-color);
     color: white;
     border: 2px solid var(--light-text-color);
     letter-spacing: 0.1;
     transition: all 1s;
+    display: inline-block;
+}
+
+.contact-btn {
+    position: center;
+    padding: 5px 10px;  
+    background: var(--light-text-color);
+    color: transparent;
+    border: 2px solid var(--light-text-color);
+    letter-spacing: 0.1;
+    transition: all 1s;
+    display: inline-block;
+}
+
+.email {
+    position: center;
+    padding: 5px 10px; 
+    letter-spacing: 0.1;
+    transition: all 1s;
+    display: inline-block;
+    display: none;
+    color: blue;
+    background: transparent;
+    border: 2px solid blue;
 }
 
 .material-icons {

@@ -18,6 +18,7 @@
     <meta name="theme-color" content="#FFE1C4">
     <script src="assets/js/app.js"></script>
     <link rel="manifest" href="manifest.json">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body id="index-body" style="overflow: hidden;">
@@ -51,13 +52,31 @@
                     If you want to know more about me, check my principal projects.
                 </p>
                 <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-                <button class="animated bounce delay-4s learn-btn">
-                    About Me
-                </button>
                 <a href="projects.html">
-                    <button class="contact-btn">
+                    <button class="animated bounce delay-4s learn-btn">
                         My projects
-                    </button></a>
+                    </button>
+                </a>
+                <div id="contact" style="display: inline-block;">
+                    <button class="contact-btn" onclick="show()">
+                        Contact me!
+                    </button>
+                </div>
+                <div id="email" class="email">
+                    smenaaliaga@gmail.com
+                </div>
+
+                <script>
+                    function show() {
+                        var x = document.getElementById("contact");
+                        var y = document.getElementById("email");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                            y.style.display = "inline-block";                        }
+                    }
+                </script>
                 <div class="social-icons">
                     <a target="_blank" href="mailto:smenaaliaga@gmail.com"><i class="fas fa-envelope"></i></a>
                     <a target="_blank" href="https://github.com/smenaaliaga"><i class="fab fa-github"></i></a>
